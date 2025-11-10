@@ -6,7 +6,7 @@ portadoserver = 6789
 serverSocket.bind(('', portadoserver))
 serverSocket.listen(1)
 
-print(f"Servidor HTTP simples rodando em porta {portadoserver} ... (Ctrl+C para encerrar)")
+print(f"Servidor HTTP rodando em porta {portadoserver} ... (Ctrl+C para encerrar)")
 
 try:
     while True:
@@ -57,3 +57,4 @@ except KeyboardInterrupt:
 finally:
     serverSocket.close()
     sys.exit(0)
+
