@@ -1,11 +1,50 @@
 <!doctype html>
-<html>
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8">
     <title>Hello</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: #fff;
+        font-family: "Segoe UI", Arial, sans-serif;
+        animation: fadeIn 2s ease;
+      }
+      h1 {
+        font-size: 3em;
+        color: #00ffff;
+        margin-bottom: 10px;
+        text-shadow: 0 0 6px rgba(0, 255, 255, 0.6);
+        animation: fadeIn 2s ease;
+      }
+      p {
+        font-size: 1.2em;
+        color: #b0e0e6;
+        opacity: 0.9;
+        animation: fadeIn 3s ease;
+      }
+      footer {
+        position: absolute;
+        bottom: 10px;
+        font-size: 0.9em;
+        color: #ccc;
+        opacity: 0.8;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
   </head>
   <body>
     <h1>Hello, World!</h1>
-    <p>Servidor HTTP simples - AV2</p>
+    <p>Servidor HTTP - AV2 - Redes de Computadores</p>
+    <footer>Powered by Heitorftbz</footer>
   </body>
 </html>
